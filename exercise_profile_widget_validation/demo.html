@@ -16,6 +16,9 @@
         padding:10px;
         margin:10px;
       }
+      .profile img {
+        width:100%;
+      }
       fieldset {
         border:none;
       }
@@ -30,7 +33,7 @@
 
       <div class="profile">
         <h1>{{name}}</h1>
-        <img src="{{url}}" alt="{{name}}" />
+        <img ng-src="{{url}}" alt="{{name}}" />
         <div>
           <label for="edit">Edit</label>
           <input id="edit" type="checkbox" ng-model="edit" />
